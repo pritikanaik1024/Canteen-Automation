@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:foregroundTint="#F44336"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="187dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/acme"
+        android:text="Let's create something fresh and new !"
+        android:textAlignment="center"
+        android:textColor="@color/red_background"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_width="335dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="92dp"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:ems="10"
+        android:hint=" Enter your Email"
+        android:textAlignment="center"
+        android:inputType="textEmailAddress"
+
+        android:textColor="#FF5757"
+        android:textColorHint="#FF5757"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="341dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="24dp"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:ems="10"
+        android:hint=" Enter your password"
+        android:textAlignment="center"
+        android:inputType="textVisiblePassword|textPassword"
+        android:textColor="#FF5757"
+        android:textColorHint="#FF5757"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_email" />
+
+    <Button
+        android:id="@+id/register_2"
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_gradient"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_password" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="342dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="52dp"
+        android:buttonTint="#F44336"
+        android:checked="false"
+        android:text="By registering you accept our terms and conditions"
+        android:textColor="@color/red_background"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="389dp"
+        android:layout_height="320dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginBottom="456dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/samosa_register" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
